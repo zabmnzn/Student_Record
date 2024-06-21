@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>ADET_ACT2</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="20170524-PUP-academic-year_main.jpg" />
+    <None Remove="52-528919_the-pup-logo-polytechnic-university-of-the-philippines.png" />
+    <None Remove="backdrop.jpg" />
+    <None Remove="image51.jpg" />
+    <None Remove="PUP_CCIS_logo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="image\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.EntityFrameworkCore" Version="8.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="20170524-PUP-academic-year_main.jpg" />
+    <Resource Include="52-528919_the-pup-logo-polytechnic-university-of-the-philippines.png" />
+    <Resource Include="backdrop.jpg" />
+    <Resource Include="image51.jpg" />
+    <Resource Include="PUP_CCIS_logo.png" />
+  </ItemGroup>
+
+</Project>
